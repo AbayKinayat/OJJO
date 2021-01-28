@@ -1,0 +1,69 @@
+.advice-surprise {
+  min-height: 866px;
+  @extend %body;
+}
+
+.advice-surprise__inner {
+  @extend %inner;
+  min-height: 866px;
+  color: $color;
+  text-align: center;
+
+  padding: 120px 0;
+  
+  button {
+    @include btn1($border: 1px solid $color)
+  }
+}
+
+.advice-surprise__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 21px;
+  width: 100%;
+  color: #fff;
+
+  margin-bottom: 60px;
+  div {
+    width: 350px;
+    height: 370px;
+    line-height: 29px;
+    transition: .3s;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px 370px;
+
+    &:hover {
+      background-size: 420px 442px;
+    }
+
+    margin-bottom: 30px;
+    padding-top: 248px;
+    &:first-child {
+      background-image: url(../images/advice-surprise/item1.png);
+      span {
+        display: inline-block;
+        max-width: 154px;
+      }
+    }
+    &:nth-child(2) {
+      background-image: url(../images/advice-surprise/item2.png);
+      span {
+        display: inline-block;
+        max-width: 204px;
+      }
+    }
+    &:last-child {
+      background-image: url(../images/advice-surprise/item3.png);
+      span {
+        display: inline-block;
+        max-width: 206px;
+        margin-bottom: 0;
+
+      }
+    }
+  }
+}

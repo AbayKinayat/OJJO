@@ -1,0 +1,46 @@
+@import "variables"; 
+@import "mixin";
+@import "prototype";
+
+* {
+  @include box-size;
+
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  @include gilroy-400;
+
+  font-size: 14px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none
+}
+
+  /* HEADER */
+
+.header, section {
+  @extend %body;
+}
+
+@import 'header';
+
+@import 'section-shopping';
+
+@import 'our-salons';
+
+@import 'advice-surprise';
+
+@import 'we-social';
+
+@import 'subscribe';
+
+@import 'footer';
+
+@import 'media';
+
+

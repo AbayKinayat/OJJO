@@ -1,0 +1,29 @@
+.we-social {
+  min-height: 895px;
+
+  @extend %body;
+}
+
+.we-social__inner {
+  min-height: 895px;
+  color: $color;
+
+  @extend %inner;
+  padding-bottom: 150px;
+}
+
+.we-social__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+   
+  img {
+    transition: .2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px -3px rgb(89, 89, 89);
+    }
+  }
+  
+}

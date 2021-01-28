@@ -1,0 +1,84 @@
+.subscribe {
+  @extend %body;
+  min-height: 478px;
+
+  background-image: url(../images/us-salons/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.subscribe__inner {
+  @extend %inner;
+  min-height: 478px;
+
+  padding: 100px 0 121px 0;
+}
+
+.subscribe__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 768px;
+  ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  li {
+    font-size: 18px;
+    margin-left: 30px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 17px;
+      height: 17px;
+      transform: translate(-200%, 100%);
+
+      background-image: url(../images/subscribe/subscribe__icon.svg);
+    }
+  }
+  margin: 0 auto;
+}
+
+.subscribe__form-box {
+  width: 448px;
+  height: 113px;
+
+  border: 1px solid #fff;
+  padding: 14px 15px;
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 418px;
+  min-height: 85px;
+
+  background-color: #fff;
+  button {
+    @include btn1($font: 14px, $border: 1px solid #fff) {
+      &:hover {
+        border: 1px solid #333;
+      }
+    }
+  }
+
+  padding: 0 22px;
+}
+
+.form-email {
+  font-size: 14px;
+  width: 200px;
+  height: 45px;
+
+  border: 1px solid #d6d6d6;
+  padding: 0 20px;
+}
+
+.form-email:focus {
+  outline: none;
+}

@@ -1,0 +1,37 @@
+@mixin box-size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin gilroy-400 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+@mixin gilroy-500 {
+  font-family: 'Gilroy';
+  font-weight: 500;
+}
+
+@mixin btn1($font: 18px, $color: #fff, $bgcolor: #333333, $border: 1px solid #fff, $pad: 15px 35px, $hovercolor: #fff) {
+  font-weight: 500;
+  font-size: $font;
+  color: $color;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+
+  background-color: $bgcolor;
+
+  padding: $pad;
+  border: $border;
+  transition: .2s;
+
+  &:hover {
+    background-color: $color;
+    color: $bgcolor;
+  }
+
+  @content
+}
+

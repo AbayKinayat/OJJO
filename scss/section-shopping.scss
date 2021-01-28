@@ -1,0 +1,153 @@
+.section-shopping {
+  min-height: 1071px;
+
+  @extend %body;
+  padding-top: 100px;
+  padding-bottom: 102px;
+}
+
+.section-shopping__inner {
+  position: relative;
+  @extend %inner;
+  min-height: 851px;
+  color: #000;
+  .section-shopping__filter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .section-shopping__btn {
+    @include btn1($color: #333, $bgcolor: #fff, $pad: 20px 36px, $border: 1px solid #d6d6d6) {
+      position: relative;
+      z-index: $z-index-btn;
+      &:hover {
+        transform: translate(6px, 6px);
+      }
+    }
+  }
+
+  .clone {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: $z-index-clone;
+    transform: translate(6px, 6px);
+    width: 100%;
+  }
+}
+
+.section-shopping__btn2 {
+  @include btn1($color: #fff, $bgcolor: #fff, $pad: 20px 36px, $border: 1px solid #d6d6d6)
+}
+
+.section__title {
+  @extend %section-title;
+}
+
+.section-shopping__content-filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-top: 61px;
+}
+
+.section-shopping__content-item {
+  display: flex;
+  justify-content: center;
+  @include gilroy-500;
+  font-size: 24px;
+  width: 350px;
+  height: 280px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: .3s;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+
+  background-size: 350px 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 30px;
+  padding-top: 222px;
+
+  &:hover {
+    background-size: 420px 336px;
+  }
+}
+
+#merriage {
+  .section-shopping__content-item {
+    &:first-of-type {
+      background-image: url(../images/section-shopping/item1.png);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../images/section-shopping/item2.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../images/section-shopping/item3.png);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../images/section-shopping/item4.png);
+    }
+    &:nth-of-type(5) {
+      background-image: url(../images/section-shopping/item5.png);
+    }
+    &:last-of-type {
+      background-image: url(../images/section-shopping/item6.png);
+    }
+  }
+}
+
+#man {
+  display: none;
+  .section-shopping__content-item {
+    &:first-of-type {
+      background-image: url(../images/section-shopping/man/item1.jpg);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../images/section-shopping/man/item2.jpg);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../images/section-shopping/man/item3.jpg);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../images/section-shopping/man/item4.jpg);
+    }
+    &:nth-of-type(5) {
+      background-image: url(../images/section-shopping/man/item5.jpg);
+    }
+    &:last-of-type {
+      background-image: url(../images/section-shopping/man/item6.jpg);
+    }
+  }
+}
+
+#woman {
+  display: none;
+  .section-shopping__content-item {
+    &:first-of-type {
+      background-image: url(../images/section-shopping/woman/item1.jpg);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../images/section-shopping/woman/item2.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../images/section-shopping/woman/item3.jpg);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../images/section-shopping/woman/item4.jpg);
+    }
+    &:nth-of-type(5) {
+      background-image: url(../images/section-shopping/woman/item5.jpg);
+    }
+    &:last-of-type {
+      background-image: url(../images/section-shopping/woman/item6.jpg);
+    }
+  }
+}
